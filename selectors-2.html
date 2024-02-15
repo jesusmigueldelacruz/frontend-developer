@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div p{ /* descendientes */
+      color: lime;
+    }
+    div > div{/* hijo directo */
+      background: plum;
+    }
+    div + section{/* elemento adyacente */
+      background: palevioletred;
+    }
+    div ~ p{/* general de hermanos */
+      color: powderblue;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div>
+      <p>CodeCamp</p>
+      <p>es</p>
+    </div>
+    <p>increíble</p>
+  </div>
+  <p>Clase de selector</p>
+  <p>Clase de selector</p>
+  <section>
+    Es lo mejor
+  </section>
+</body>
+</html>
